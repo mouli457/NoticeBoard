@@ -18,7 +18,7 @@ class NoticeBoardVC: UIViewController,UITableViewDelegate,UITableViewDataSource 
         self.navigationController?.isNavigationBarHidden = false
         self.navigationItem.setHidesBackButton(true, animated: true)
 
-        self.title = "Notifications"
+        self.title = "Notification"
         viewModelUser.getAll(completion: { results in
             self.students = results
             self.reloadTableData()
